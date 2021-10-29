@@ -28,10 +28,10 @@
         android:clickable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.071"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.062"
+        app:layout_constraintVertical_bias="0.068"
         app:srcCompat="@drawable/s1" />
 
     <ImageButton
@@ -41,9 +41,26 @@
         android:clickable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.083"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton5"
-        app:layout_constraintVertical_bias="0.666"
+        app:layout_constraintVertical_bias="0.272"
         app:srcCompat="@drawable/k2" />
+
+    <CheckBox
+        android:id="@+id/widac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Widać :))"
+        tools:layout_editor_absoluteX="235dp"
+        tools:layout_editor_absoluteY="277dp" />
+
+    <CheckBox
+        android:id="@+id/nie_widac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nie widać ://"
+        tools:layout_editor_absoluteX="235dp"
+        tools:layout_editor_absoluteY="325dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,11 +13,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(layout.activity_main)
 
         var krolik = true
-        val imageButton = findViewById<ImageButton>(id.imageButton5)
-        imageButton?.setOnClickListener {
+        val imageView = findViewById<ImageView>(id.imageView)
+        imageView?.setOnClickListener {
             Toast.makeText(
                 this@MainActivity,
-                "You clicked ImageButton", Toast.LENGTH_SHORT
+                "You clicked ImageView", Toast.LENGTH_SHORT
             ).show()
             if(krolik==true){
                 imageButton.setImageDrawable(R.drawable.krolik3)
