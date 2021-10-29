@@ -2,13 +2,31 @@ package com.example.zadanieee
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageButton
+import android.widget.Toast
 import android.widget.ImageView
+import com.example.zadanieee.R.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(layout.activity_main)
+
+        var krolik = true
+        val imageButton = findViewById<ImageButton>(id.imageButton5)
+        imageButton?.setOnClickListener {
+            Toast.makeText(
+                this@MainActivity,
+                "You clicked ImageButton", Toast.LENGTH_SHORT
+            ).show()
+            if(krolik==true){
+                imageButton.setImageDrawable(R.drawable.krolik3)
+                krolik=false
+            }else{
+                krolik = true
+                imageButton.setImageDrawable(R.drawable.krolik4)
+            }
+        }
+
     }
-
-
 }
